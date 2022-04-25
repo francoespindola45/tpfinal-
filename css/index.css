@@ -1,0 +1,131 @@
+/*variables*/
+/*imports*/
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&family=Roboto:ital,wght@0,300;1,100&display=swap");
+/*normalize*/
+*,
+*::before *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+p {
+  font-size: 2em;
+  padding: 1.5rem;
+  display: inline-block;
+  text-align: center; }
+
+/*estilos globales*/
+html {
+  font-size: 62.5%;
+  font-family: "Josefin+Sans", sans-serif;
+  color: #141E27; }
+
+ul {
+  list-style-type: none; }
+
+a {
+  text-decoration: none;
+  font-size: 2em;
+  color: #141E27;
+  display: inline-block; }
+
+/*helper*/
+.flex-row {
+  display: flex; }
+
+.flex-column {
+  display: flex;
+  flex-direction: column; }
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto; }
+
+.grid-container {
+  display: grid;
+  background-color: #F0F69F;
+  height: auto;
+  width: auto;
+  grid-template-columns: auto auto; }
+
+.info {
+  display: grid;
+  background-color: #EA907A;
+  height: auto; }
+
+/*header y navbar*/
+header {
+  background-color: #B983FF; }
+  header .navbar {
+    min-height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 2rem; }
+  header .logo {
+    width: 10rem;
+    height: 10rem;
+    flex-basis: 20%; }
+  header .menu {
+    flex-basis: 40%;
+    justify-content: space-between; }
+    header .menu__item {
+      position: relative; }
+    header .menu:hover .sub-menu {
+      display: block; }
+    header .menu .menu__link {
+      font-size: 1.7rem;
+      padding: 0.5rem;
+      position: relative; }
+    header .menu .sub-menu {
+      display: none;
+      position: absolute;
+      right: 15px; }
+      header .menu .sub-menu__link {
+        padding: 0.5rem;
+        font-size: 1.7rem;
+        transition: all 0.3s ease-in-out; }
+        header .menu .sub-menu__link:hover {
+          background-color: #141E27;
+          color: #B983FF; }
+
+main img {
+  width: 100%;
+  height: 400px;
+  min-width: 10vh;
+  min-height: 10vh; }
+
+h1 {
+  color: white;
+  font-size: 3rem;
+  font-family: 'Josefin+Sans', sans-serif;
+  position: absolute;
+  top: 40%;
+  left: 40%; }
+
+#footer {
+  display: grid;
+  background-color: black;
+  position: relative;
+  padding: 0.5rem;
+  grid-template-columns: 150px 50px;
+  justify-content: center; }
+
+#footer h3 {
+  color: white;
+  text-align: center;
+  padding: 0%; }
+
+div .cachi, div .tequila, div .wisky {
+  width: 20rem;
+  height: 20rem; }
+
+div .quienes-somos {
+  width: 20rem;
+  height: 20rem; }
+
+div .que-hacemos {
+  width: 20rem;
+  height: 20rem; }
+
+a img {
+  width: 100%; }

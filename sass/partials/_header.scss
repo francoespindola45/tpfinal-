@@ -1,0 +1,64 @@
+/*header y navbar*/
+header {
+    background-color: map-get($map:$palette , $key:principal );
+    .navbar {
+        min-height: 10vh;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 2rem; 
+    } 
+    
+    .logo {
+    width: 10rem;
+    height: 10rem;
+    flex-basis: 20%;
+    }
+
+    .menu {
+     flex-basis: 40%;
+     justify-content: space-between; 
+    
+     &__item {
+         position: relative; 
+        }
+        &:hover{
+            .sub-menu{
+                display: block;}
+        }
+        .menu__link {
+            font-size: 1.7rem;
+            padding: 0.5rem;
+            position: relative; }
+            .sub-menu {
+                display: none;
+                position: absolute;
+                right: 15px;
+                &__link {
+                    padding: 0.5rem;
+                    font-size: 1.7rem;
+                    transition: all 0.3s ease-in-out;
+                    &:hover {
+                        background-color: map-get($map: $palette , $key: secundario );
+                        color:map-get($map: $palette, $key:principal );
+
+                    }
+                }
+            }
+        
+    }
+}
+  
+
+  main img {
+    width: 100%;
+    height: 400px;
+    min-width: 10vh;
+    min-height: 10vh; }
+  
+  h1 {
+    color: map-get($map: $palette, $key:blanco );
+    font-size: 3rem;
+    font-family: 'Josefin+Sans', sans-serif;
+    position: absolute;
+    top: 40%;
+    left: 40%; }

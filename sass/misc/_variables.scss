@@ -1,0 +1,20 @@
+/*variables*/
+@mixin size-img {
+    width: 20rem;
+    height: 20rem;
+    }
+
+$font-principal: 'Josefin+Sans', sans-serif;
+$text-lg: 2.4em;
+$text-md: 2em;
+$text-sm: 0.5em;
+
+
+$palette:(
+    principal:#B983FF,
+    secundario:#141E27,
+    tercero:#F0F69F,
+    cuarto:#EA907A,
+    blanco:white,
+    negro:black,
+)

@@ -1,0 +1,25 @@
+/*helper*/
+.flex-row {
+    display: flex; }
+  
+  .flex-column {
+    display: flex;
+    flex-direction: column; }
+  
+  .container {
+    max-width: 1920px;
+    margin: 0 auto; }
+  
+  .grid-container {
+    display: grid;
+    background-color: map-get($map:$palette , $key:tercero );
+    height: auto;
+    width: auto;
+    grid-template-columns: auto auto; }
+  
+  .info {
+    display: grid;
+    background-color: map-get($map:$palette , $key:cuarto );
+    height: auto; }
+  
+  

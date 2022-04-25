@@ -1,0 +1,30 @@
+/*imports*/
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&family=Roboto:ital,wght@0,300;1,100&display=swap");
+
+/*normalize*/
+*,
+*::before
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+p {
+  font-size: $text-md;
+  padding: 1.5rem;
+  display: inline-block;
+  text-align: center; }
+
+/*estilos globales*/
+html {
+    font-size: 62.5%;
+    font-family: $font-principal;
+    color: map-get($map: $palette, $key: secundario); }
+  
+  ul {
+    list-style-type: none; }
+  
+  a {
+    text-decoration: none;
+    font-size: $text-md;
+    color: map-get($map: $palette, $key:secundario );
+    display: inline-block; }

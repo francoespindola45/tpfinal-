@@ -1,0 +1,12 @@
+#footer {
+    display: grid;
+    background-color: map-get($map: $palette, $key:negro);
+    position: relative;
+    padding: 0.5rem;
+    grid-template-columns: 150px 50px;
+    justify-content: center; }
+
+#footer h3 {
+    color: map-get($map: $palette, $key:blanco );
+    text-align: center;
+    padding: 0%; }

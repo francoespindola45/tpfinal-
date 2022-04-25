@@ -1,0 +1,22 @@
+div .cachi {
+    @include size-img 
+}
+  
+div .tequila {
+    @extend .cachi; 
+}
+  
+div .wisky {
+    @extend .cachi;
+}
+  
+div .quienes-somos {
+    @include size-img;
+}
+  
+div .que-hacemos {
+    @include size-img 
+}
+a img {
+    width: 100%; }
+      
