@@ -21,5 +21,201 @@
     display: grid;
     background-color: map-get($map:$palette , $key:cuarto );
     height: auto; }
+  .text{
+    background-color: map-get($map:$palette , $key:tercero );
+    display: grid;
+  }
+.carousel {
+  background-color:map-get($map:$palette , $key:tercero ) ;
+}
+.lista {
+  list-style-type: circle;
+  font-size: $text-md;
+  text-align: justify;
   
-  
+}
+
+.contact {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/banner.jpg);
+
+  &::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5 );
+  }
+
+  .contain {
+      position: absolute;
+      top: 70%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 50px;
+      font-family: sans-serif;
+
+      .title2 {
+          font-size: 80px;
+          color: white;
+          font-weight: lighter;
+          text-align: center;
+          top: 0%;
+          left: auto;
+      }
+
+      .form {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+
+          .input-contain {
+              width: 45%;
+              height: 45px;
+              border-bottom: 1px solid white;
+              margin-top: 70px;
+              position: relative;
+
+              input {
+                  width: 100%;
+                  height: 100%;
+                  background-color: transparent;
+                  border: none;
+                  outline: none;
+                  color: white;
+                  font-size: 14px;
+                  letter-spacing: 1px;
+                  position: relative;
+                  z-index: 1;
+
+                  &:focus ~ label span, &:valid ~ label span {
+                      transform: translateY(-30px);
+                  }
+
+                  &:focus ~ label::before, &:valid ~ label::before {
+                      width: 101%;
+                  }
+
+                  &:required {
+                      box-shadow: none;
+                  }
+              }
+
+              label {
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  top: 0;
+                  left: 0;
+
+                  &::before {
+                      content: '';
+                      position: absolute;
+                      left: 50%;
+                      transform: translateX(-50%);
+                      width: 0%;
+                      height: 2px;
+                      background-color: black;
+                      bottom: -1px;
+                      transition: width .3s ease;
+                  }
+
+                  span {
+                      position: absolute;
+                      top: 13px;
+                      color: white;
+                      font-size: 14px;
+                      letter-spacing: 1px;
+                      transition: transform .3s ease;
+                  }
+              }
+          }
+      }
+
+      .textarea-contain {
+          width: 100%;
+          border-bottom: 1px solid white;
+          margin-top: 70px;
+          position: relative;
+
+          textarea {
+              width: 100%;
+              height: 100%;
+              background-color: transparent;
+              border: none;
+              outline: none;
+              resize: none;
+              position: relative;
+              z-index: 1;
+              color: #fff;
+              font-size: 14px;
+              letter-spacing: 1px;
+              padding: 13px 13px 13px 0px;
+              font-family: sans-serif;
+
+              &:focus ~ label span, &:valid ~ label span {
+                  transform: translateY(-30px);
+              }
+
+              &:focus ~ label::before, &:valid ~ label::before {
+                  width: 101%;
+              }
+
+              &:required {
+                  box-shadow: none;
+              }
+          }
+
+          label {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              top: 0;
+              left: 0;
+
+              &::before {
+                  content: '';
+                  position: absolute;
+                  left: 50%;
+                  transform: translateX(-50%);
+                  width: 0%;
+                  height: 2px;
+                  background-color: black;
+                  bottom: -1px;
+                  transition: width .3s ease;
+              }
+
+              span {
+                  position: absolute;
+                  top: 13px;
+                  color: white;
+                  font-size: 14px;
+                  letter-spacing: 1px;
+                  transition: transform .3s ease;
+              }
+          }
+      }
+
+      button {
+          width: 110px;
+          height: 45px;
+          outline: none;
+          border-radius: 5px;
+          margin: 50px auto 0px auto;
+          background-color: black;
+          color: white;
+          border: 2px solid black;
+          font-size: 17px;
+          letter-spacing: 1px;
+          cursor: pointer;
+          transition: background-color .3s ease, color .3s ease, border .3s ease;
+
+          &:hover {
+              background-color: #fff;
+              color: #000;
+              border: 2px solid #000;
+          }
+      }
+  }
+} 
